@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Rock Paper Sissors</title>
 		<link rel="stylesheet" href="./styles.css" />
-		<script src="./script.js"></script>
+		<script src="./script.js" defer></script>
 	</head>
 	<body>
 		<div id="headContainer">
@@ -14,35 +14,33 @@
 				<h1>Its time to play the game....</h1>
 			</div>
 			<div id="para">
-				<p>
-					Face off against your computer in this riveting 5 round game of Rock,
-					Paper, Scissors!
+				<p id="text">
+					Face off against your computer in this riveting game of Rock, Paper,
+					Scissors!
 				</p>
 			</div>
 		</div>
-		<div id="startGame">
-			<button id="start">Start Game</button>
-		</div>
+
 		<div class="gameConsole">
 			<div class="rock">
-				<button id="rock">Rock</button>
+				<button id="rockBttn" name="rock">Rock</button>
 			</div>
 			<div class="paper">
-				<button id="paper">Paper</button>
+				<button id="paperBttn" name="paper">Paper</button>
 			</div>
 			<div class="scissors">
-				<button id="scissors">Scissors</button>
+				<button id="scissorsBttn" name="scissors">Scissors</button>
 			</div>
 		</div>
-		
 		<div id="gameOutput">
-			<div id="playerScore">
-					<h2>Player Score:</h2>
-					<p>0</p>
-				</div>
-				<div id="computerScore">
-					<h2>Computer Score:</h2>
-					<p>0</p>
-				</div>
+			<div>
+				<h2>Player Score:</h2>
+				<p id="playerScore">0</p>
+			</div>
+			<div>
+				<h2>Computer Score:</h2>
+				<p id="computerScore">0</p>
+			</div>
+		</div>
 	</body>
 </html>
